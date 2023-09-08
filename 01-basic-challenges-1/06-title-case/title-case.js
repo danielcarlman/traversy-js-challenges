@@ -21,10 +21,7 @@ function titleCase(str) {
 //   let array = str.split(" ");
 //   let result = array
 //     .map((word) => {
-//       return (
-//         word.slice(0, 1).toUpperCase() +
-//         word.toLowerCase().slice(1, word.length)
-//       );
+//       return word.slice(0, 1).toUpperCase() + word.toLowerCase().slice(1);
 //     })
 //     .join(" ");
 //   return result;

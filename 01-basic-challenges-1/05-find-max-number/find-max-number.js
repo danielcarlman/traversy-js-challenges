@@ -1,12 +1,12 @@
 // 1) LOW LEVEL SOLUTION
 
 function findMaxNumber(arr) {
-  let maxNum = 0;
+  let maxNum = arr[0];
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 1; i < arr.length; i++) {
     let currentNum = arr[i];
     if (currentNum > maxNum) {
-      [currentNum, maxNum] = [maxNum, currentNum];
+      maxNum = currentNum;
     }
   }
   return maxNum;

@@ -9,4 +9,9 @@ function countVowels(str) {
   return count;
 }
 
+// const countVowels = (str) => {
+//   const pattern = str.match(/[aeiou]/gi);
+//   return pattern === null ? null : pattern.length;
+// };
+
 module.exports = countVowels;

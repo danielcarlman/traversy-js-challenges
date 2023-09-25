@@ -1,5 +1,5 @@
 function diceGameSimulation(numSimulations) {
-  let randomNum = () => Math.ceil(Math.random() * 6);
+  let randomNum = () => Math.floor(Math.random() * 6) + 1;
   let result = "";
   const simulations = [];
   const odds = {

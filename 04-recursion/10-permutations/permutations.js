@@ -7,8 +7,7 @@ function generatePermutations(string) {
 
     for (let i = 0; i < remainingChars.length; i++) {
       const newFirstChar = FirstChar + remainingChars[i];
-      const newremainingChars =
-        remainingChars.slice(0, i) + remainingChars.slice(i + 1);
+      const newremainingChars = remainingChars.slice(0, i + 1);
       runPermutation(newFirstChar, newremainingChars);
     }
   }

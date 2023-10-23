@@ -1,7 +1,7 @@
 // Define a function called maxSubarraySum which takes an array 'arr' and a positive integer 'k' as input
 function maxSubarraySum(arr, k) {
   // Initialize a variable 'maxSum' to store the maximum sum of subarrays
-  let maxSum = 0;
+  let maxSum = -Infinity;
 
   // Iterate through the array from index 0 to (length - k)
   // We only need to consider subarrays of length 'k', so we stop when there's not enough elements left
